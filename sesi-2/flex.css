@@ -1,0 +1,22 @@
+.container {
+  display: flex;
+}
+
+.container div {
+  background: peachpuff;
+  border: 5px solid brown;
+  height: 100px;
+}
+.menu-container {
+  color: #fff;
+  background-color: #5995da;
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+}
+.menu {
+  border: 1px solid #fff;
+  width: 900px;
+  display: flex;
+  justify-content: space-between;
+}

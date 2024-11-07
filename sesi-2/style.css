@@ -1,0 +1,53 @@
+h1 {
+    color: red;
+}
+.kotak-satu { 
+    padding: 20px; 
+    margin: 10px; 
+    border: 2px; 
+    background-color: lightblue; 
+  } 
+   
+  .kotak-dua { 
+    padding: 20px; 
+    margin: 10px; 
+    border: 2px; 
+    background-color: lightcoral; 
+    max-width: 50%; 
+  } 
+   
+  .kotak-tiga { 
+    padding-left: 50px; 
+    margin-top: 50px; 
+    margin-left: 50px; 
+    border-left: 2px dotted lightsalmon; 
+    background-color: lightskyblue; 
+    width: 300px; 
+    height: 200px; 
+  }
+
+* {
+    mergin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.menu-container {
+    color: #fff;
+    background-color: #5995DA;
+    padding: 20px 0;
+}
+
+.menu {
+    border: 1px solid #fff;
+    width: 900px;
+}
+
+.link {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.login {
+  margin-left: 20px;
+}

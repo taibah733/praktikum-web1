@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta htpp-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar DOM</title>
+</head>
+<body>
+    <h1 id="uji-heading"></h1>
+    <p id="uji_paragraf"></p>
+    <input type="text" id="uji_input">
+
+    <script>
+        ujiParagraf = document.getElementById('uji_paragraf');
+        ujiInput = document.getElementById('uji_input');
+
+        ujiHeading.innerHTML = "Judul";
+        ujiParagraf.innerHTML = "Paragraf";
+        ujiInput.value = "Input";
+    </script>
+    <body>
+        <h1 id="uji-heading">
+            sorot  dong!
+        </h1>
+
+        <h2 id="uji_klik" onmousedown="tahan(this)" onmouseup="lepas(this)">
+            klik dong!
+        </h2>
+
+        <label for="uji_input">Uji Coba Input</label><br>
+        <input type="text" id="uji-input"><br>
+        <span id="uji_span"></span><br>
+        <button onclick="klik()">klik</button>
+        <button>Ulangi</button>
+
+        <script>
+            function sorot(obj){
+                obj.innerHTML = "sudah disorot";
+            }
+            function keluarSorot(obj){
+                obj.innerHTML = "Sorot lagi dong!";
+            }
+            function tahan(obj){
+            obj.innerHTML= "Lpepasin..."
+            }
+            function lepas(obj) {
+                obj.innerHTML = "klik  lagi dong!"
+            }
+            function klik(){
+                valueInput = document.getElementById('uji_input').value;
+                document.getElementById('uji_span').innerHTML = valueInput;
+
+                if (valueinput == "") {
+                    span.innerHTML = "Inputan Kosong";
+                    span.style = "color:red";
+                } else {
+                    span.innerHTML = "input : '"+valueInput+"'";
+                    span.style = "color:blue";
+                }
+                <input type="type" id="uji_input" onkeyup="tiru()"><br>
+                }
+
+            function tiru(){
+                valueInput = document.getElementById('uji_input').value;
+                document.getElementById('uji_span').innerHTML = valueInput;
+            }
+            <button onclick="ulangi()">Ulangi</button>
+            function ulangi() {
+                document.getElementById('uji_input').value = "";
+                document.getElementById('uji_span').innerHTML =-"";
+                document.getElementById('uji_heading').innerHTML = "Sorot Dong!";
+                document.getElementById('uji_klik').innerHTML = "Klik";
+            }
+        </script>
+    </body>
+</body>
+</html>
